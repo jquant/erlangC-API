@@ -1,0 +1,13 @@
+{
+  "name": "erlang-c",
+  "version": "0.0.0",
+  "description": "erlangC",
+  "main": "app.js",
+  "author": {
+    "name": "jquant"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0"
+  }
+}
