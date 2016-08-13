@@ -85,7 +85,7 @@ function Factorial(Input) {
 app.post('/AverageSpeedOfAnswer', function (req, res) {
     if (req.body.data) {
         // var data = JSON.parse(req.body.otherStuff);
-        var data = req.body.data;
+        var data = req.body;
 
         var calls = data.calls;
         var serviceLevel = data.serviceLevel;
@@ -112,9 +112,9 @@ app.post('/AverageSpeedOfAnswer', function (req, res) {
 })
 
 app.post('/OptimalStaff', function (req, res) {
-    if (req.body.data) {
+    if (req.body) {
         // var data = JSON.parse(req.body.otherStuff);
-        var data = req.body.data;
+        var data = req.body;
 
         var calls = data.calls;
         var serviceLevel = data.serviceLevel;
@@ -135,7 +135,8 @@ app.post('/OptimalStaff', function (req, res) {
 
     }
     else {
-
+        var okok = req.body.data;
+        var test = req.body;
         var result = { "answer": "no data" };
         res.json(result);
     }
